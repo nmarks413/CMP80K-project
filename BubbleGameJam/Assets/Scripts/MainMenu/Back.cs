@@ -11,7 +11,7 @@ public class Back : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Main = GameObject.Find("Main").gameObject.GetComponent<Canvas>();
+        Main = GameObject.Find("Main").GetComponent<Canvas>();
 
         Button btn = GameObject.Find("Back").GetComponent<Button>();
         btn.onClick.AddListener(OpenOptions);

@@ -253,9 +253,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.1
-  animFramerate: 30
-  tempFacingSprite: {fileID: 21300000, guid: 7b68b23b4043bea46a4f25d8baf7ab7e, type: 3}
-  animSprite:
+  animFramerate: 12
+  horizAnimSprite:
   - {fileID: 1132891846, guid: b9bf49adfbb627b4d8535aaa8617f1f2, type: 3}
   - {fileID: 904270209, guid: b9bf49adfbb627b4d8535aaa8617f1f2, type: 3}
   - {fileID: 718772573, guid: b9bf49adfbb627b4d8535aaa8617f1f2, type: 3}
@@ -266,6 +265,16 @@ MonoBehaviour:
   - {fileID: -1435015874, guid: b9bf49adfbb627b4d8535aaa8617f1f2, type: 3}
   - {fileID: -1290614734, guid: b9bf49adfbb627b4d8535aaa8617f1f2, type: 3}
   - {fileID: 924768862, guid: b9bf49adfbb627b4d8535aaa8617f1f2, type: 3}
+  upAnimSprite:
+  - {fileID: 94773621, guid: addd09fece64aed4aa8e5039a0653faf, type: 3}
+  - {fileID: 1320516614, guid: addd09fece64aed4aa8e5039a0653faf, type: 3}
+  - {fileID: 188600890, guid: addd09fece64aed4aa8e5039a0653faf, type: 3}
+  - {fileID: -1229453756, guid: addd09fece64aed4aa8e5039a0653faf, type: 3}
+  downAnimSprite:
+  - {fileID: 1570866274, guid: 41a405652c9e6db41847df11430dca21, type: 3}
+  - {fileID: -561504991, guid: 41a405652c9e6db41847df11430dca21, type: 3}
+  - {fileID: -1684243811, guid: 41a405652c9e6db41847df11430dca21, type: 3}
+  - {fileID: 68123922, guid: 41a405652c9e6db41847df11430dca21, type: 3}
 --- !u!212 &1744808336
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -315,6 +324,6 @@ SpriteRenderer:
   m_Size: {x: 1, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
