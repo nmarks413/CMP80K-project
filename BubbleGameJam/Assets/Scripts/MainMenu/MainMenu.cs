@@ -47,7 +47,7 @@ public class MainMenu : MonoBehaviour
     {
         Button backButton = GameObject.Find("Back").GetComponent<Button>();
 
-        Slider volumeSlider = GameObject.Find("Volume").GetComponent<Slider>();
+        volumeSlider = GameObject.Find("Volume").GetComponent<Slider>();
 
         backButton.onClick.AddListener(returnToMainMenu);
         volumeSlider.onValueChanged.AddListener(delegate { ChangeVolume(); });
