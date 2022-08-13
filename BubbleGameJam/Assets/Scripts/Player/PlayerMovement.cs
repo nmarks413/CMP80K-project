@@ -18,7 +18,8 @@ public class PlayerMovement : MonoBehaviour
 
     private char prevDirection;
     private int animationStatusHoriz;
-    private int animationStatusVert;
+    private int animationStatusVertDown;
+    private int animationStatusVertUp;
 
     private int gameFramesToAnimFrames;
 
@@ -26,7 +27,8 @@ public class PlayerMovement : MonoBehaviour
     {
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
         animationStatusHoriz = 0;
-        animationStatusVert = 0;
+        animationStatusVertDown = 0;
+        animationStatusVertUp = 0;
         prevDirection = 'W';
     }
     private void FixedUpdate()
@@ -114,12 +116,12 @@ public class PlayerMovement : MonoBehaviour
 
         if (gameFramesToAnimFrames >= 50 / animFramerate)
         {
-            spriteRenderer.sprite = upAnimSprite[animationStatusVert];
-            animationStatusVert++;
+            spriteRenderer.sprite = upAnimSprite[animationStatusVertUp];
+            animationStatusVertUp++;
 
-            if (animationStatusVert == 4)
+            if (animationStatusVertUp == 4)
             {
-                animationStatusVert = 0;
+                animationStatusVertUp = 0;
             }
 
             gameFramesToAnimFrames = 0;
@@ -132,12 +134,12 @@ public class PlayerMovement : MonoBehaviour
 
         if (gameFramesToAnimFrames >= 50 / animFramerate)
         {
-            spriteRenderer.sprite = downAnimSprite[animationStatusVert];
-            animationStatusVert++;
+            spriteRenderer.sprite = downAnimSprite[animationStatusVertDown];
+            animationStatusVertDown++;
 
-            if (animationStatusVert == 4)
+            if (animationStatusVertDown == 8)
             {
-                animationStatusVert = 0;
+                animationStatusVertDown = 0;
             }
 
             gameFramesToAnimFrames = 0;
