@@ -40,7 +40,8 @@ public class MainMenu : MonoBehaviour
     }
     void exitGame()
     {
-
+        Application.Quit();
+        //TODO: Implement javascript close function
     }
 
     void OptionButtonInstantiation()
