@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 41a405652c9e6db41847df11430dca21
+guid: c6e58a280f73c0f4c85db9096f22ace3
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -104,7 +104,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: walkingdown_0
+      name: walkingdown_update_0
       rect:
         serializedVersion: 2
         x: 0
@@ -118,14 +118,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1b4df5ead8555c649a71715572d89477
-      internalID: 1570866274
+      spriteID: 282efe63ca1b74a41ad41f2c4996af08
+      internalID: -481449593
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walkingdown_1
+      name: walkingdown_update_1
       rect:
         serializedVersion: 2
         x: 16
@@ -139,14 +139,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8d1cfdbac9d213f4983f7a368580500c
-      internalID: -561504991
+      spriteID: ffc1f41038af1d4498d7212d73f9d768
+      internalID: 978117074
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walkingdown_2
+      name: walkingdown_update_2
       rect:
         serializedVersion: 2
         x: 32
@@ -160,14 +160,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 778e278985de075429d54415c7259c9d
-      internalID: -1684243811
+      spriteID: 7c568b5c5ebb9d24ea5b2e713bf76242
+      internalID: -535409253
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walkingdown_3
+      name: walkingdown_update_3
       rect:
         serializedVersion: 2
         x: 48
@@ -181,8 +181,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c8d7bf8d2fa53f947a886d90f62fbbbd
-      internalID: 68123922
+      spriteID: 77c5efa790e52604e83e91408554bbe6
+      internalID: -514862500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingdown_update_4
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b22c908c2e9a91047b6a645420ca25e5
+      internalID: -848223676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingdown_update_5
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee0e0a351ce58034ab943cb96ac0e165
+      internalID: -2037037637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingdown_update_6
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f106449c09535f41b1523c7a203b021
+      internalID: -400151172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingdown_update_7
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 0
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: add6b1236035c774489521506ea894c5
+      internalID: 45450854
       vertices: []
       indices: 
       edges: []
@@ -198,10 +282,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      walkingdown_1: -561504991
-      walkingdown_2: -1684243811
-      walkingdown_3: 68123922
-      walkingdown_0: 1570866274
+      walkingdown_update_0: -481449593
+      walkingdown_update_7: 45450854
+      walkingdown_update_4: -848223676
+      walkingdown_update_1: 978117074
+      walkingdown_update_5: -2037037637
+      walkingdown_update_6: -400151172
+      walkingdown_update_2: -535409253
+      walkingdown_update_3: -514862500
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
