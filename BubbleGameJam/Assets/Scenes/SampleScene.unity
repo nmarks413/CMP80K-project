@@ -271,10 +271,14 @@ MonoBehaviour:
   - {fileID: 188600890, guid: addd09fece64aed4aa8e5039a0653faf, type: 3}
   - {fileID: -1229453756, guid: addd09fece64aed4aa8e5039a0653faf, type: 3}
   downAnimSprite:
-  - {fileID: 1570866274, guid: 41a405652c9e6db41847df11430dca21, type: 3}
-  - {fileID: -561504991, guid: 41a405652c9e6db41847df11430dca21, type: 3}
-  - {fileID: -1684243811, guid: 41a405652c9e6db41847df11430dca21, type: 3}
-  - {fileID: 68123922, guid: 41a405652c9e6db41847df11430dca21, type: 3}
+  - {fileID: -481449593, guid: c6e58a280f73c0f4c85db9096f22ace3, type: 3}
+  - {fileID: 978117074, guid: c6e58a280f73c0f4c85db9096f22ace3, type: 3}
+  - {fileID: -535409253, guid: c6e58a280f73c0f4c85db9096f22ace3, type: 3}
+  - {fileID: -514862500, guid: c6e58a280f73c0f4c85db9096f22ace3, type: 3}
+  - {fileID: -848223676, guid: c6e58a280f73c0f4c85db9096f22ace3, type: 3}
+  - {fileID: -2037037637, guid: c6e58a280f73c0f4c85db9096f22ace3, type: 3}
+  - {fileID: -400151172, guid: c6e58a280f73c0f4c85db9096f22ace3, type: 3}
+  - {fileID: 45450854, guid: c6e58a280f73c0f4c85db9096f22ace3, type: 3}
 --- !u!212 &1744808336
 SpriteRenderer:
   m_ObjectHideFlags: 0
