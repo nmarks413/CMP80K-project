@@ -15,7 +15,7 @@ public class MainMenu : MonoBehaviour
 
         mainMenu = GameObject.Find("Main").GetComponent<Canvas>();
         optionsMenu = GameObject.Find("OptionsCanvas").GetComponent<Canvas>();
-        audioSource = GetComponent<AudioSource>();
+        audioSource = GameObject.Find("MenuAudio").GetComponent<AudioSource>();
 
         Button startButton = GameObject.Find("Start").GetComponent<Button>();
         Button optionsButton = GameObject.Find("Options").GetComponent<Button>();
@@ -49,10 +49,15 @@ public class MainMenu : MonoBehaviour
 
         volumeSlider = GameObject.Find("Volume").GetComponent<Slider>();
 
+        
+
+        audioSource.volume = 50;
+
         backButton.onClick.AddListener(returnToMainMenu);
         volumeSlider.onValueChanged.AddListener(delegate { ChangeVolume(); });
         volumeSlider.maxValue = 1;
         volumeSlider.minValue = 0;
+        volumeSlider.value = 0.5f;
     }
 
     void returnToMainMenu()
@@ -63,10 +68,12 @@ public class MainMenu : MonoBehaviour
 
     void ChangeVolume()
     {
-        Debug.Log(volumeSlider.value);
+        //Debug.Log(volumeSlider.value);
         audioSource.volume = volumeSlider.value;
-        Text VolumeText = GetComponent<Text>();
-        VolumeText.text = audioSource.volume.ToString();
+        
+        
+        //Debug.Log(VolumeText.text);
+        
         Debug.Log(audioSource.volume);
 
     }
