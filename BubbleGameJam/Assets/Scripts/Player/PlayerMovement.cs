@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
-    [Range(0, 1)]
+    [Range(1,10)]
     public float speed;
 
     [Range(0, 50)]
@@ -60,11 +60,12 @@ private void FixedUpdate()
                 spriteRenderer.sprite = horizAnimSprite[0];
             if (prevDirection == KeyCode.W || prevDirection == KeyCode.S)
                 spriteRenderer.sprite = upAnimSprite[0];
+            gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
         }
     }
 #pragma warning restore CS8321 // Local function is declared but never used
 void UpdatePosition(Vector3 direction, KeyCode key, Action animate){
-	    transform.position = Vector3.Lerp(transform.position,transform.position+direction, speed);
+        gameObject.GetComponent<Rigidbody2D>().velocity = direction * speed;
 	    
 	    if(prevDirection != key){
 		    if(key == KeyCode.D){
