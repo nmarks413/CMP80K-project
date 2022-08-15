@@ -1,7 +1,7 @@
 using System.Collections;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
-
 public class PlayerMovement : MonoBehaviour
 {
     [Range(0, 1)]
@@ -16,7 +16,7 @@ public class PlayerMovement : MonoBehaviour
 
     private SpriteRenderer spriteRenderer;
 
-    private char prevDirection;
+    private KeyCode prevDirection;
     private int animationStatusHoriz;
     private int animationStatusVertDown;
     private int animationStatusVertUp;
@@ -29,69 +29,54 @@ public class PlayerMovement : MonoBehaviour
         animationStatusHoriz = 0;
         animationStatusVertDown = 0;
         animationStatusVertUp = 0;
-        prevDirection = 'W';
+        prevDirection = KeyCode.W;
     }
-    private void FixedUpdate()
-    {
-        if (Input.GetKey(KeyCode.W))
-        {
-            transform.position = Vector3.Lerp(transform.position, transform.position + Vector3.up, speed);
 
-            if(prevDirection != 'W')
-            {
-                prevDirection = 'W';
-            }
 
-            UpAnimate();
-        }
-
+#pragma warning disable CS8321 // Local function is declared but never used
+private void FixedUpdate()
+    {		
+	if(Input.GetKey(KeyCode.W)){
+		UpdatePosition(Vector3.up,KeyCode.W, UpAnimate);
+        
+	}
         else if (Input.GetKey(KeyCode.A))
         {
-            transform.position = Vector3.Lerp(transform.position, transform.position + Vector3.left, speed);
-
-            if (prevDirection != 'A')
-            {
-                transform.localRotation = Quaternion.Euler(0, 180, 0);
-                prevDirection = 'A';
-            }
-
-            HorizontalAnimate();
+		UpdatePosition(Vector3.left,KeyCode.A,HorizontalAnimate);
         }
 
         else if (Input.GetKey(KeyCode.S))
         {
-            transform.position = Vector3.Lerp(transform.position, transform.position + Vector3.down, speed);
-
-            if(prevDirection != 'S')
-            {
-                prevDirection = 'S';
-            }
-
-            DownAnimate();
+		UpdatePosition(Vector3.down,KeyCode.S,DownAnimate);
         }
 
         else if (Input.GetKey(KeyCode.D))
         {
-            transform.position = Vector3.Lerp(transform.position, transform.position + Vector3.right, speed);
-
-            if (prevDirection != 'D')
-            {
-                transform.localRotation = Quaternion.Euler(0, 0, 0);
-                prevDirection = 'D';
-            }
-
-            HorizontalAnimate();
+		UpdatePosition(Vector3.right,KeyCode.D,HorizontalAnimate);
         }
         else
         {
-            if (prevDirection == 'D' || prevDirection == 'A')
+            if (prevDirection == KeyCode.D || prevDirection == KeyCode.A)
                 spriteRenderer.sprite = horizAnimSprite[0];
-            if (prevDirection == 'W' || prevDirection == 'S')
+            if (prevDirection == KeyCode.W || prevDirection == KeyCode.S)
                 spriteRenderer.sprite = upAnimSprite[0];
         }
     }
-
-    void HorizontalAnimate()
+#pragma warning restore CS8321 // Local function is declared but never used
+void UpdatePosition(Vector3 direction, KeyCode key, Action animate){
+	    transform.position = Vector3.Lerp(transform.position,transform.position+direction, speed);
+	    
+	    if(prevDirection != key){
+		    if(key == KeyCode.D){
+		    	transform.localRotation = Quaternion.Euler(0, 0, 0);
+		    } else if(key == KeyCode.A){
+                transform.localRotation = Quaternion.Euler(0, 180, 0);
+		    }
+		    prevDirection = key;
+	    }
+	   animate(); 
+    }
+     void HorizontalAnimate()
     {
 
         gameFramesToAnimFrames++;
