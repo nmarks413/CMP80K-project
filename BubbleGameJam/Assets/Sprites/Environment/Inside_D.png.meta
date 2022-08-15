@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 24
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -1273,10 +1273,10 @@ TextureImporter:
       Urinal: -1069685404
       Locker_long: -811176932
       Frame_square: -1515088013
-      shoe_1: 32444652
       Board_large_right: -1550104192
-      Picture: -459950143
+      shoe_1: 32444652
       Curtain_purple_2: -375219944
+      Picture: -459950143
       Vending_Machine_Purple_wide: -1803168555
       Locker_long_full: 283983954
       Umbrella_holder_purple: -801133086
