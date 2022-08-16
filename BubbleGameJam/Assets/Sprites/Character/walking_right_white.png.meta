@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c6e58a280f73c0f4c85db9096f22ace3
+guid: 4597f92f4931c9f45860e0bb493d32b6
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -100,11 +100,23 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: walkingdown_update_0
+      name: walking_right_white_0
       rect:
         serializedVersion: 2
         x: 0
@@ -118,14 +130,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 282efe63ca1b74a41ad41f2c4996af08
-      internalID: -481449593
+      spriteID: e2491186fe0cdb44793d0c76aeb06f4f
+      internalID: 763206944
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walkingdown_update_1
+      name: walking_right_white_1
       rect:
         serializedVersion: 2
         x: 16
@@ -139,14 +151,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ffc1f41038af1d4498d7212d73f9d768
-      internalID: 978117074
+      spriteID: 9108a6940f7ff5046abbd980291fa041
+      internalID: 446619577
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walkingdown_update_2
+      name: walking_right_white_2
       rect:
         serializedVersion: 2
         x: 32
@@ -160,14 +172,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7c568b5c5ebb9d24ea5b2e713bf76242
-      internalID: -535409253
+      spriteID: 6c554baf1152fe545a9522b6daafc530
+      internalID: 1683141779
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walkingdown_update_3
+      name: walking_right_white_3
       rect:
         serializedVersion: 2
         x: 48
@@ -181,14 +193,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 77c5efa790e52604e83e91408554bbe6
-      internalID: -514862500
+      spriteID: acee0154c57e15c42b5108c0b9291917
+      internalID: 917341503
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walkingdown_update_4
+      name: walking_right_white_4
       rect:
         serializedVersion: 2
         x: 64
@@ -202,14 +214,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b22c908c2e9a91047b6a645420ca25e5
-      internalID: -848223676
+      spriteID: 1851780d05994e24cbb475c019933b61
+      internalID: -580348720
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walkingdown_update_5
+      name: walking_right_white_5
       rect:
         serializedVersion: 2
         x: 80
@@ -223,14 +235,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ee0e0a351ce58034ab943cb96ac0e165
-      internalID: -2037037637
+      spriteID: 670adf99e06aba14b9ee8d8c1842c833
+      internalID: -795643986
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walkingdown_update_6
+      name: walking_right_white_6
       rect:
         serializedVersion: 2
         x: 96
@@ -244,14 +256,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3f106449c09535f41b1523c7a203b021
-      internalID: -400151172
+      spriteID: 4c9bfbc1d06f26546861d00d9634e6e6
+      internalID: -966353490
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walkingdown_update_7
+      name: walking_right_white_7
       rect:
         serializedVersion: 2
         x: 112
@@ -265,8 +277,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: add6b1236035c774489521506ea894c5
-      internalID: 45450854
+      spriteID: f5f5e84ac83ca1b45b2a81efe3ead22e
+      internalID: -656967664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walking_right_white_8
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76dd8a51a2f71e04abc140a90f53580d
+      internalID: 615288651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walking_right_white_9
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d3433b2a24bc1d448298bc15beb0b3b
+      internalID: -1571879794
       vertices: []
       indices: 
       edges: []
@@ -282,14 +336,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      walkingdown_update_0: -481449593
-      walkingdown_update_7: 45450854
-      walkingdown_update_4: -848223676
-      walkingdown_update_1: 978117074
-      walkingdown_update_5: -2037037637
-      walkingdown_update_6: -400151172
-      walkingdown_update_2: -535409253
-      walkingdown_update_3: -514862500
+      walking_right_white_2: 1683141779
+      walking_right_white_3: 917341503
+      walking_right_white_0: 763206944
+      walking_right_white_4: -580348720
+      walking_right_white_1: 446619577
+      walking_right_white_6: -966353490
+      walking_right_white_5: -795643986
+      walking_right_white_9: -1571879794
+      walking_right_white_8: 615288651
+      walking_right_white_7: -656967664
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
