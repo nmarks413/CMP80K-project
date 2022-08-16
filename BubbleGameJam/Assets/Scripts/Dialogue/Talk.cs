@@ -13,11 +13,19 @@ public class Talk : MonoBehaviour
     private GameObject bubble1;
     private GameObject bubble2;
     private GameObject bubble3;
+    private Sprite sprite1;
+    private Sprite sprite2;
+    private Sprite sprite3;
 
     private void Start()
     {
         player = GameObject.Find("Player");
         pbuddy = GameObject.Find("Pbuddy");
+        sprite1 = Resources.Load<Sprite>("rawr_xd");
+        sprite1 = Resources.Load<Sprite>("school_chem");
+        sprite1 = Resources.Load<Sprite>("weather");
+
+
     }
     private void Update()
     {
@@ -34,7 +42,7 @@ public class Talk : MonoBehaviour
     void DrawTalkBubble(GameObject npc)
     {
         bubble1 = new GameObject();
-        //bubble1.GetComponent<SpriteRenderer>().sprite = ;
+        bubble1.GetComponent<SpriteRenderer>().sprite = sprite1;
     }
     void CheckBubbleHover(GameObject bubble)
     {
