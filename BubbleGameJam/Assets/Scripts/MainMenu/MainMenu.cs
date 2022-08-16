@@ -32,7 +32,7 @@ public class MainMenu : MonoBehaviour
     }
     void StartGame()
     {
-
+        SceneManager.LoadScene("demoScene", LoadSceneMode.Single);
     }
     void openOptions()
     {
