@@ -1,16 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ResourceMechanics : MonoBehaviour
 {
     private int confidence;
+    private Text text;
     private SpriteRenderer spriteRenderer;
 
     private void Start()
     {
         confidence = 10;
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
+        text = GameObject.Find("ConfidenceValue").GetComponent<Text>();
     }
 
     private void FixedUpdate()
@@ -34,6 +37,8 @@ public class ResourceMechanics : MonoBehaviour
                 {
                     confidence -= 2;
                 }
+
+                text.text = confidence.ToString();
             }
             if(confidence > 7)
             {
