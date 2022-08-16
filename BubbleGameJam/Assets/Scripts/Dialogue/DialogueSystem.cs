@@ -19,7 +19,7 @@ public class DialogueSystem : MonoBehaviour
         instantiated = false;
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
         if (Vector3.Distance(player.transform.position, transform.position) < radius)
         {
