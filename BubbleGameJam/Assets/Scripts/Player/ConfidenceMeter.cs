@@ -5,16 +5,18 @@ using UnityEngine.UI;
 
 public class ConfidenceMeter : MonoBehaviour
 {
-    private Image image;
+    private Text tempConfidence;
+    public int confidence;
     // Start is called before the first frame update
     void Start()
     {
-        GameObject.Find("ConfidenceMet").GetComponent<Image>();
+        confidence = 100;
+        tempConfidence = gameObject.GetComponent<Text>();
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        
+        tempConfidence.text = confidence.ToString();
     }
 }
