@@ -10,6 +10,8 @@ public class PlayerMovement : MonoBehaviour
     [Range(0, 50)]
     public int animFramerate;
 
+    public Sprite stillVert;
+
     public Sprite[] horizAnimSprite;
     public Sprite[] upAnimSprite;
     public Sprite[] downAnimSprite;
@@ -59,7 +61,7 @@ private void FixedUpdate()
             if (prevDirection == KeyCode.D || prevDirection == KeyCode.A)
                 spriteRenderer.sprite = horizAnimSprite[0];
             if (prevDirection == KeyCode.W || prevDirection == KeyCode.S)
-                spriteRenderer.sprite = upAnimSprite[0];
+                spriteRenderer.sprite = stillVert;
             gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
         }
     }
@@ -105,7 +107,7 @@ void UpdatePosition(Vector3 direction, KeyCode key, Action animate){
             spriteRenderer.sprite = upAnimSprite[animationStatusVertUp];
             animationStatusVertUp++;
 
-            if (animationStatusVertUp == 4)
+            if (animationStatusVertUp == 8)
             {
                 animationStatusVertUp = 0;
             }

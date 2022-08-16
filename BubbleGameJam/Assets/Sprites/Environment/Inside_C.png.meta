@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 24
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -2637,11 +2637,11 @@ TextureImporter:
       small_closed_book: -700196274
       long_white_light: 533362
       blue_window: 554879642
-      bomb_looking_thing: -616183899
-      bookshelf: -136865835
-      fire_hydrant: -821423895
       wardrobe_side: 2078861724
+      bookshelf: -136865835
       bomb_plant: -1247385572
+      fire_hydrant: -821423895
+      bomb_looking_thing: -616183899
       fourpane_white: -1395201505
       open_window: 284873829
       forward_chair: 1591392875
