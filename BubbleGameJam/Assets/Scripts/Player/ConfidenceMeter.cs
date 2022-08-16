@@ -10,7 +10,7 @@ public class ConfidenceMeter : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        confidence = 100;
+        confidence = 10;
         tempConfidence = gameObject.GetComponent<Text>();
     }
 
