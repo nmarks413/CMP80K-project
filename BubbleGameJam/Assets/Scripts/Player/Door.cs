@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Classroom : MonoBehaviour
+
+public class Door : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -11,9 +12,10 @@ public class Classroom : MonoBehaviour
         
     }
 
-   
+    // Update is called once per frame
     void OnCollisionEnter2D(Collision2D col)
     {
-        SceneManager.LoadScene("demoClassroom",LoadSceneMode.Single);
+        Debug.Log("work");
+        SceneManager.LoadScene("demoScene",LoadSceneMode.Single);
     }
 }
