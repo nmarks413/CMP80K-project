@@ -7,7 +7,7 @@ public class EmotionDemo : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        GameObject.Find("Player").GetComponent<SpriteRenderer>().color = Color.blue;
+        GameObject.Find("Player").GetComponent<SpriteRenderer>().color = Color.black;
     }
 
     // Update is called once per frame
